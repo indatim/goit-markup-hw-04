@@ -11,6 +11,8 @@
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
+    --icons-color: #AFB1B8;
+    --border-color: #AFB1B8;
 }
 
 /* html {
@@ -166,6 +168,8 @@ body {
 .nav-contacts {
     display: flex;
     margin-left: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-contacts .link {
@@ -196,8 +200,13 @@ body {
     color: var(--accent-color);
 }
 
-.link.current {
-    color: var(--accent-color);
+/* .link.current {
+    color: currentColor;
+} */
+
+.contact-icons {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 /* Герой */
@@ -207,6 +216,13 @@ body {
 
     padding-top: 200px;
     padding-bottom: 200px;
+    
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-title {
@@ -224,6 +240,8 @@ body {
     width: 696px;
 
     margin: 0 auto 30px;
+
+
 }
 
 /* Button */
@@ -305,10 +323,6 @@ body {
 
 /* Особливості/Features */
 
-/* .feature-headtitle {
-    display: none;
-} */
-
 .feature {
     display: flex;
     /* margin-top: 94px;
@@ -349,6 +363,17 @@ body {
 
 .feature .item + .item {
     margin-left: 30px;
+}
+
+.feature-pics {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 /* Чим ми займаємось/Work */
@@ -430,8 +455,81 @@ body {
 
 .team {
     padding-top: 30px;
-    padding-bottom: 30px;
 }
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin: 16px 32px 30px 32px
+}
+
+.social-item {
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    color: var(--icons-color);
+    cursor: pointer;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+.social-icon {
+    fill: currentColor;
+}
+
+/* .social-media {
+    display: flex;
+    justify-content: center;
+    margin: 16px 32px 30px 32px;
+}
+
+.social-item {
+    display: flex;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--icons-color);
+}
+
+.social-item:hover,
+.social-item:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+}
+
+.social-icon {
+    fill: currentColor;
+} */
 
 /* Портфоліо/Portfolio */
 
@@ -515,6 +613,65 @@ body {
     border-left-width: 1px;
     border-left-style: solid;
     border-left-color: #EEEEEE;
+}
+
+/* Постійні клієнти */
+/* .clients {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+} */
+
+.section-clients {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    align-items: center;
+    margin-right: 30px;
+    border: 1px solid ;
+    color: var(--icons-color);
+    border-color: var(--border-color);
+    border-radius: 4px;
+}
+
+.clients-item:last-child {
+    margin-right: 0;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.clients-icon {
+    fill: currentColor;
 }
 
 /* Адреса/Address */
