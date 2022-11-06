@@ -181,7 +181,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     
-    display: block;
+    display: inline-flex;
     
     padding-top: 32px;
     padding-bottom: 32px;
@@ -205,6 +205,7 @@ body {
 } */
 
 .contact-icons {
+    align-self: center;
     margin-right: 10px;
     fill: currentColor;
 }
@@ -615,6 +616,11 @@ body {
     border-left-color: #EEEEEE;
 }
 
+.card:hover,
+.card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* Постійні клієнти */
 /* .clients {
     display: flex;
@@ -717,7 +723,67 @@ body {
     line-height: 1.71;
 } */
 
+/* Приєднуйтесь */
+
+.joinus {
+    display: flex;
+    width: 206px;
+    height: 80px;
+}
+
+.joinus-title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+}
+
+.joinus .social-media {
+    display: flex;
+    justify-content: center;
+    margin: 16px 32px 30px 32px
+}
+
+.joinus .social-item {
+    margin-right: 10px;
+    
+}
+
+.joinus .social-item:last-child {
+    margin-right: 0;
+}
+
+.joinus .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    color: var(--icons-color);
+    cursor: pointer;
+}
+
+.joinus .social-link:hover,
+.joinus .social-link:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+.joinus .social-icon {
+    fill: currentColor;
+}
+
 /* Футер/Footer */
+.footer-block {
+    display: flex;
+    align-items: baseline;
+}
+
 .footer-nav {
     margin: 0;
 }
