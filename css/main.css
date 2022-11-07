@@ -600,6 +600,7 @@ body {
 }
 
 .portfolio-link {
+    display: block;
     text-decoration: none;
     margin: 0;
 }
@@ -662,7 +663,7 @@ body {
 
 .clients-list {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -709,7 +710,7 @@ body {
     display: inline-block;
     text-decoration: none;
     font-style: normal;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
     margin-bottom: 9px;
@@ -719,7 +720,7 @@ body {
     display: inline-block;
     text-decoration: none;
     font-style: normal;
-    color: #FFFFFF;
+    color:rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
 }
