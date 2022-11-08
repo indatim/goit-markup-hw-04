@@ -746,7 +746,7 @@ body {
     display: inline-flex;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
     text-transform: uppercase;
@@ -757,7 +757,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .joinus .social-item {
@@ -774,7 +774,6 @@ body {
     align-items: center;
     height: 44px;
     width: 44px;
-    padding: 12px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1); 
     color: var(--icons-color);
